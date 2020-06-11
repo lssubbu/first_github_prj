@@ -10,5 +10,15 @@ c:\users\ankit\documents\visual studio 2012\Projects\ConsoleApplication1\Console
 c:\users\ankit\documents\visual studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.xml
 c:\users\ankit\documents\visual studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
 C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.xml
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\bin\Debug\EAGetMail.dll
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.Resources.resources
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.vbproj.GenerateResource.Cache
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.xml
 C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.vbprojAssemblyReference.cache
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.vbproj.CoreCompileInputs.cache
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.vbproj.CopyComplete
