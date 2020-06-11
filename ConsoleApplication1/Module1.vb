@@ -1,4 +1,6 @@
-﻿Imports System.Globalization
+﻿
+
+Imports System.Globalization
 Imports System.Text
 Imports System.IO
 Imports EAGetMail 'imports EAGetMail namespace
@@ -8,11 +10,15 @@ Module Module1
 
     Function _generateFileName(ByVal sequence As Integer) As String
         Dim currentDateTime As DateTime = DateTime.Now
-        Return String.Format("{0}-{1:000}-{2:000}.eml",
+
+        Return "test.txt"
+        Return String.Format("{0}-{1:000}-{2:000}.txt",
                             currentDateTime.ToString("yyyyMMddHHmmss", New CultureInfo("en-US")),
                             currentDateTime.Millisecond,
                             sequence)
     End Function
+
+    
 
     Sub Main()
 
@@ -25,51 +31,59 @@ Module Module1
             If Not Directory.Exists(localInbox) Then
                 Directory.CreateDirectory(localInbox)
             End If
+            Dim i As Integer
+            i = 1
 
-            ' Gmail IMAP server is "imap.gmail.com"
-            Dim oServer As New MailServer("imap.gmail.com",
-                    "lssubbu1111@gmail.com",
-                    "",
-                    ServerProtocol.Imap4)
+            Dim fileName As String = _generateFileName(i + 1)
+            Dim fullPath As String = String.Format("{0}\{1}", localInbox, fileName)
 
-            ' Enable SSL/TLS connection, most modern email server require SSL/TLS connection by default.
-            oServer.SSLConnection = True
-            ' Set 993 IMAP SSL Port
-            oServer.Port = 993
+            If System.IO.File.Exists(fullPath) = True Then
 
-            Console.WriteLine("Connecting server ...")
+                Dim objWriter As New System.IO.StreamWriter(fullPath)
 
-            Dim oClient As New MailClient("TryIt")
-            oClient.Connect(oServer)
+                objWriter.Write(DateTime.Now)
+                objWriter.Close()
 
-            Dim infos As MailInfo() = oClient.GetMailInfos()
-            Console.WriteLine("Total {0} email(s)", infos.Length)
 
-            For i As Integer = 0 To infos.Length - 1
-                Dim info As MailInfo = infos(i)
-                Console.WriteLine("Index: {0}; Size: {1}; UIDL: {2}",
-                        info.Index, info.Size, info.UIDL)
+            Else
 
-                ' Retrieve email from IMAP server
-                Dim oMail As Mail = oClient.GetMail(info)
+                'MessageBox.Show("File Does Not Exist")
 
-                Console.WriteLine("From: {0}", oMail.From.ToString())
-                Console.WriteLine("Subject: {0}" & vbCr & vbLf, oMail.Subject)
+            End If
 
-                ' Generate an unqiue email file name based on date time.
-                Dim fileName As String = _generateFileName(i + 1)
-                Dim fullPath As String = String.Format("{0}\{1}", localInbox, fileName)
+            '' Gmail IMAP server is "imap.gmail.com"
+            'Dim oServer As New MailServer("imap.gmail.com",
+            '        "lssubbu1111@gmail.com",
+            '        "",
+            '        ServerProtocol.Imap4)
 
-                ' Save email to local disk
-                oMail.SaveAs(fullPath, True)
+            '' Enable SSL/TLS connection, most modern email server require SSL/TLS connection by default.
+            'oServer.SSLConnection = True
+            '' Set 993 IMAP SSL Port
+            'oServer.Port = 993
 
-                ' Mark email as deleted from IMAP server.
-                oClient.Delete(info)
+            'Console.WriteLine("Connecting server ...")
 
-            Next
+            'Dim oClient As New MailClient("TryIt")
+            'oClient.Connect(oServer)
+
+            'Dim infos As MailInfo() = oClient.GetMailInfos()
+            'Console.WriteLine("Total {0} email(s)", infos.Length)
+
+            'For i As Integer = 0 To 3
+
+            '    ' Generate an unqiue email file name based on date time.
+            '    Dim fileName As String = _generateFileName(i + 1)
+            '    Dim fullPath As String = String.Format("{0}\{1}", localInbox, fileName)
+
+            '    ' Save email to local disk
+            '    FileSystem.FileCopy(fullPath, fullPath)
+
+
+            'Next
 
             ' Quit and expunge emails marked as deleted from IMAP server.
-            oClient.Quit()
+
             Console.WriteLine("Completed!")
 
         Catch ep As Exception
