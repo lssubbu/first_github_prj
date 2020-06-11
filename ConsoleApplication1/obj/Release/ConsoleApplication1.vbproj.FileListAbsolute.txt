@@ -1,0 +1,12 @@
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\bin\Release\ConsoleApplication1.exe.config
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\bin\Release\ConsoleApplication1.exe
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\bin\Release\ConsoleApplication1.pdb
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\bin\Release\ConsoleApplication1.xml
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\bin\Release\EAGetMail.dll
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\obj\Release\ConsoleApplication1.Resources.resources
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\obj\Release\ConsoleApplication1.vbproj.GenerateResource.cache
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\obj\Release\ConsoleApplication1.vbproj.CoreCompileInputs.cache
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\obj\Release\ConsoleApplication1.vbproj.CopyComplete
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\obj\Release\ConsoleApplication1.exe
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\obj\Release\ConsoleApplication1.xml
+C:\LSS\Personal\Projects_Test\DevOps_Tutorial\ConsoleApplication1\ConsoleApplication1\obj\Release\ConsoleApplication1.pdb
