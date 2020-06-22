@@ -6,6 +6,7 @@ Imports System.IO
 Imports EAGetMail 'imports EAGetMail namespace
 
 'added commment to test commit 27Apr20
+'added comment to test set new system 22jun20
 Module Module1
 
     Function _generateFileName(ByVal sequence As Integer) As String
